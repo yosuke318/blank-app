@@ -1,7 +1,7 @@
 import streamlit as st
 
 if "role" not in st.session_state:
-    st.session_state.role = None
+    st.session_state["role"] = None
 
 ROLES = [None, "Requester", "Responder", "Admin"]
 
