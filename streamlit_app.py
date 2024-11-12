@@ -51,10 +51,15 @@ admin_1 = st.Page(
 )
 admin_2 = st.Page("admin/admin_2.py", title="Admin 2", icon=":material/security:")
 
+pagenation = st.Page(
+    "admin/pagenation.py",
+    title="pagenation"
+)
+
 account_pages = [logout_page, settings]
 request_pages = [request_1, request_2]
 respond_pages = [respond_1, respond_2]
-admin_pages = [admin_1, admin_2]
+admin_pages = [admin_1, admin_2,pagenation]
 
 st.title("Request manager")
 st.logo("images/horizontal_blue.png", icon_image="images/icon_blue.png")
